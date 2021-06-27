@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/contactsText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="@string/contacts"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:gravity="center"/>
+
+    <ListView
+        android:id="@+id/contacts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/contactsText"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <RelativeLayout
+        android:id="@+id/insertContact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="300dp"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:onClick="launchCreateActivity"
+            android:text="+" />
+    </RelativeLayout>
+</RelativeLayout>

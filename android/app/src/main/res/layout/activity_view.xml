@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ViewActivity">
+
+    <TextView
+        android:id="@+id/viewContact"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="@string/contact_info"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="30dp"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/viewContactNameAttr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/contact_name"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/viewContactName"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="@string/empty"
+        android:layout_marginBottom="30dp"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/viewPhoneNumberAttr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/phone_number"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/viewPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="@string/empty"
+        android:layout_marginBottom="30dp"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/viewAdditionalInfoAttr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/additional_information"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/viewAdditionalInfo"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="@string/empty"
+        android:layout_marginBottom="30dp"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/viewCategoryAttr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/category"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/viewCategory"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="@string/empty"
+        android:layout_marginBottom="30dp"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:gravity="center" />
+
+    <RelativeLayout
+        android:id="@+id/viewButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/editContact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="40dp"
+            android:gravity="center"
+            android:onClick="editContact"
+            android:text="@string/edit"
+            android:backgroundTint="@color/design_default_color_primary_variant"/>
+
+        <Button
+            android:id="@+id/deleteContact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40dp"
+            android:gravity="center"
+            android:onClick="deleteContact"
+            android:text="@string/delete"
+            android:backgroundTint="@color/design_default_color_error"/>
+    </RelativeLayout>
+</LinearLayout>
